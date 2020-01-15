@@ -1,0 +1,391 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Facebook</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<link rel="icon" type="image/ico" href="Facebook.ico" />
+		<style type= "text/css">
+		  
+		  *{
+		  box-sizing: border-box;
+		    }  
+		#menu {position: fixed;
+		  overflow:visible;
+		  margin:-50px 2px 2px 2px;
+		  padding:10px 0 0 75px;
+		  list-style:none;
+		  background:royalblue;
+		  width:100%;}
+		  
+		  #menu a{
+			  float:left;
+			  height:25px;
+			  padding:2px 10px;
+			  color: white;
+			  font: bold 12px/25px Arial, Helvetica;
+			  text-decoration: none;}
+			
+		  #menu li {float:left; 
+		  padding:0 0 10px 0; 
+		  position:relative;
+		  }
+		  
+		#menu li:hover>a{
+			background-color:navy;
+			color:white;
+		  }
+		  
+		#menu ul{
+			  list-style:none;
+			  margin:0;
+			  padding:0;
+			  position: absolute;
+			  top:35px;
+			  left:0;
+			  display:none;
+			  background:white;}
+		
+		#menu ul a{
+			color:black;
+
+		}
+
+		#menu li:hover>ul{
+			display:block;
+			height:auto;
+			line-height:1;
+			display:block;
+    		white-space: nowrap;
+    		float: none;
+    		text-transform: none; 
+		  }
+		#main {overflow:auto;
+			width:100%;
+			margin-top:50px;
+			background-color:whitesmoke;
+			border:2px solid black;
+		}
+		section {
+			border:1px solid blue;
+			width:20%;
+			float:left;
+			background-color:whitesmoke;
+		  }
+
+	
+		#sideBar li{
+			list-style:none;
+			color:dimgray;
+			font-weight:400px;
+			padding-bottom: 10px;
+		}
+
+		.ulnest {
+			list-style-type:none;
+			padding:18px 0 0 10px;
+		}
+		.ulnest li{
+			width:80%;
+		}
+		.ulnest li a{
+			text-decoration:none;
+			color:black;
+		}
+		.ulnest li:hover{
+			background-color:white;
+		}
+		.ulnest li a i{
+			font-size:25px;
+		}
+		#seeMore a{
+		text-decoration:underlined;
+		color:black;
+		}
+		
+		#seeMore ul{
+		margin: 0;
+		padding: 0;
+		position:relative;
+		display:none;
+		text-decoration:none;
+		color:red;
+		}
+		#seeMore:hover>ul{
+		height:auto;
+		line-height:1.5;
+		display:block;
+   		white-space:nowrap;
+		
+		} 
+		article {
+			clear:none;
+			float:left;
+			width:35%;
+			padding-left:5px;
+			
+		}
+		#createPost li{
+		list-style-type:none;
+		margin-left:0px;
+		margin-right:6px;
+		background:whitesmoke;
+		text-align:center;
+		width:28%;
+		border-radius:10px;
+		float:left;
+		}
+		#createPost a{
+		color:black;
+		}
+		.media {
+		background-color:white;
+		overflow:hidden;
+		border-radius:10px;
+		margin-bottom:25px;
+		margin-top:25px;
+		}
+		
+		.like {
+		clear:both;float:left;
+		width:33.3%;
+		text-align:center; 
+		}
+		.comment{float:left;
+		width:33.3%;
+		text-align:center;
+		}
+		.share {float:right;
+		width:33.3%;
+		text-align:center;
+		}
+		.media span a{text-decoration:none;
+		color:black;
+		}
+		aside {clear:none;
+		float:left;
+		width:25%;
+		background-color:white;
+		margin-left:10px;
+		
+		}
+		aside a:hover {
+		color:white;
+		background:blue;
+		text-decoration: underline;
+		font-weight:bold;
+		border-radius:10px;
+		}
+		.grpName {
+		color:blue;
+		font-weight:bold;
+		text-decoration:none;
+		}
+		.joinGrp {
+		color:black;
+		font-weight:300px;
+		text-decoration:none;
+		float:right;
+		background-color:silver;
+		border-radius:5px;
+		}
+		aside div {
+		border-radius:4px;
+		border:1px solid black;
+		margin:5px 0;	
+		}
+		
+		#online a:hover{
+		color:red;
+		text-decoration:underline !important;
+		font-weight:bold;
+		}
+		.fa-arrow-left:hover , .fa-arrow-right:hover {
+		color:pink;
+		font-width:bold;
+		}
+		
+		.games {
+		clear:right;
+		float:left;
+		border-radius:50%; 
+		object-fit:cover;
+		}
+		.games:hover{
+		border:1px solid blue;
+		}
+		
+		</style>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	
+	<body>
+		<header>	
+		
+		<ul id="menu">
+			<li> <a><i class="fa fa-facebook-official" style="font-size:20px" aria-hidden="true"></i>
+			</a></li>
+			<li> <form action="#"> <input type="text" name="Search">
+									<input type="Submit" value="Submit"></form> </li>
+			<li> <a href="#" target="_blank" title="Profile"> userName <a> </li>
+			<li> <a href="#" target="_blank"  > Home <a> </li>
+			<li> <a href="#" target="_blank"> Find Friends <a> </li>
+			<li> <a href="#" target="_blank"> Create <a> </li>
+			
+			<li><a><i class="fa fa-comments" style="font-size:20px" aria-hidden="true"></i>
+			</a></li>
+			<li><a><i class="fa fa-users" style="font-size:20px" aria-hidden="true"></i>
+			</a></li>
+			<li><a><i class="fa fa-bell" style="font-size:20px" aria-hidden="true"></i>
+			</a></li>
+			<li><a><i class="fa fa-question-circle" style="font-size:20px" aria-hidden="true"></i>
+			</a></li>
+			<li><a><i class="fa fa-caret-down" style="font-size:20px" aria-hidden="true"></i>
+			</a> 
+			<ul >
+				<li><a href="#">Manage Groups</a></li>
+				<li><a href="#">Advertising on facebook</a></li>
+				<li><a href="#">Activity Log</a></li>
+				<li><a href="#">News Feed Preferences</a></li>
+				<li><a href="#">Settings</a></li>
+				<li><a href="#">See Facebook Beta</a></li>
+				<li><a href="#">Log Out</a></li>
+				
+			</ul>
+				 
+			</li>
+					
+		</ul>
+	
+		</header>
+		<div id="main">
+		<section>
+			<ul id="sideBar">
+				
+				<li><ul class="ulnest">
+					<li><a href="#"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.giantbomb.com%2Fuploads%2Fsquare_small%2F9%2F95666%2F1881642-pikachu_pokemon_kanto_new_official.png&f=1&nofb=1" 
+					 style="border-radius:50%;" width="30px" height="30px" vspacing="20px" > &nbsp User Name </a></li>
+					<li><a href="#"><i class="fa fa-newspaper-o" style="color:skyblue;"></i> &nbsp News Feed</a></li<i class="fa fa-"></i></a></li> 
+					<li><a href="#"><i class="fa fa-comments" style="color:blue;"></i> &nbsp Messanger</a></li>
+					<li><a href="#"><i class="fa fa-television" style="color:darkblue;"></i> &nbsp Videos On Watch</a></li>
+					<li><a href="#"><i class="fa fa-shopping-cart" style="color:green;"></i> &nbsp Marketplace</a></li>
+				</ul></li>
+				<li>Shortcuts</li>
+				<li><ul class="ulnest">
+					<li><a href="#">Texas HoldEm Pocker</a></li>
+				</ul></li>
+				<li>Explore</li>
+				<li><ul class="ulnest">
+					<li><a href="#"><i class="fa fa-newspaper-o" style="color:orange;"></i> &nbsp Fundraisers</a></li>
+					<li><a href="#"><i class="fa fa-flag" style="color:darkorange;"></i> &nbsp Pages</i</li>
+	  	  			<li><a href="#"> <i class="fa fa-users" style="color:blue;"></i> &nbsp Groups</a></li>
+					<li><a href="#"> <i class="fa fa-calendar-o" style="color:red;"> </i> &nbsp Events</a></li>
+					<li><a href="#"> <i class="fa fa-user-plus" style="color:blue;"></i> &nbsp Friend Lists</a></li>
+					<li id="seeMore"><a href="#" style="color:pinkred;"> <i class="fa fa-caret-down"></i> &nbsp See More...</a>
+						<ul >
+							<li><a href="#"> <i class="fa fa-gamepad"></i> &nbsp Games</a></li>
+							<li><a href="#"> <i class="fa fa-sun-o"></i> &nbsp Weather</a></li>
+							<li><a href="#"> <i class="fa fa-address-card-o"></i> &nbsp Recent Ad Activity</a></li>
+							<li><a href="#"> <i class="fa fa-handshake-o"></i> &nbsp Offers</a></li>
+							<li><a href="#"> <i class="fa fa-star"></i> &nbsp Recommendations</a></li>
+							<li><a href="#"> <i class="fa fa-briefcase"></i> &nbsp Jobs</a></li>
+							<li><a href="#"> <i class="fa fa-bookmark"></i> &nbsp Saved</a></li>
+							
+						</ul>
+					</li>
+				</ul></li>
+			</ul>
+		</section>
+		<article>
+			<div style="border:1px solid black; overflow:auto; background-color:white;border-radius:6px;">
+				<a href="#"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.giantbomb.com%2Fuploads%2Fsquare_small%2F9%2F95666%2F1881642-pikachu_pokemon_kanto_new_official.png&f=1&nofb=1" 
+					 style="border-radius:50%;float:left;" width="70px" height="70px"> </a>
+				<h4 style="float:left;">Create Post</h4>
+				<form  style="clear:both;">
+				<hr>
+					<label> What's on your mind </label>
+					<textarea type="text" rows="2" cols="60" name="createPost">What's on your mind , Chirag?</textarea>
+					<input type="submit" name="submit" value="Add Your Status" style="width:50%;margin-left:20%;"> </input>
+					<ul id="createPost">
+						<li><a href="#" ><i class="fa fa-picture-o" > Photo/video </i> </a> <li>
+						<li><a href="#" ><i class="fa fa-user-plus"> Tag Friends </i> </a> <li>
+						<li><a href="#" ><i class="fa fa-smile-o" > Feeling/Activity </i> </a> <li> 
+				</form>
+				<br>
+			</div>
+			<div style="border:1px solid black;margin-top:20px; background-color:white;border-radius:6px;">
+				<i class="fa fa-plus-circle" style="font-size:20px;"></i>
+				<b>Add to Your Story</b>
+				<br>&nbsp Share a photo , video or write something<br>
+				<br>
+			</div>
+			<div class="media">
+				<i class="fa fa-user-circle"></i>
+				<strong style="color:blue">Ea</strong>
+				<spin> <br> Nature Picture Clicked </spin>
+				<img src="https://wonderfulengineering.com/wp-content/uploads/2016/01/nature-wallpapers-16.jpg" alt="Nature's Image" width="510px" height="300px">
+				<i class="fa fa-thumbs-up" style="color:blue;"> 3</i> 
+				<span style="float:right;"> 2 comments 5 shares</span>
+				<span class="like" > <a href="#" > <i class="fa fa-thumbs-o-up"> </i> Like</a> </span>
+				<span class="comment" > <a href="#" > <i class="fa fa-comment-o"> </i> Comment</a> </span>
+				<span class="share" > <a href="#" > <i class="fa fa-share"> </i> Share</a> </span>
+		
+			</div>
+			
+			<div class="media">
+				<i class="fa fa-user-circle"></i>
+				<strong style="color:blue">Ea</strong>
+				<span> <br> The new Cyber Truck is here</span>
+				<video src="https://www.tesla.com/xNVh4yUEc3B9/11_Desktop_Video.mp4?_=3" width="510px"  type="video/mp4" controls>Video not Supported
+				</video>
+				<i class="fa fa-thumbs-up" style="color:blue;"> </i> 3
+				<span style="float:right;"> 2 comments 5 shares</span>
+				<span class="like" > <a href="#" > <i class="fa fa-thumbs-o-up"> </i> Like</a> </span>
+				<span class="comment" > <a href="#" > <i class="fa fa-comment-o"> </i> Comment</a> </span>
+				<span class="share" > <a href="#" > <i class="fa fa-share"> </i> Share</a> </span>
+			</div>
+		</article>	
+		<aside>
+			<span>Suggested Groups</span>
+			<a href="#" style="clear:none;float:right;text-decoration:none;">See all</a>
+			<br>
+			<br>
+			<div >
+				<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FDMnV3XwJ-Fc%2Fmaxresdefault.jpg&f=1&nofb=1" width="370px" height="200px" alt="Ad">
+				<a href="#" class="grpName"> SHRI S.N.S.P.S School </a> 
+				<a href="#" class="joinGrp"> + Join Group </a>
+			</div>
+			<div >
+				<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.W_1Xscj6Ov1I3BttLyqEbwHaEU%26pid%3DApi&f=1" width="370px" height="200px" alt="Ad">
+				<a href="#" class="grpName"> Jims </a> 
+				<a href="#" class="joinGrp"> + Join Group </a>
+			</div>
+			<div >
+				<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2F94_SsdXfzpw%2Fmaxresdefault.jpg&f=1&nofb=1" width="370px" height="200px" alt="Ad">
+				<a href="#" class="grpName"> Sonic </a> 
+				<a href="#" class="joinGrp"> + Join Group </a>
+			</div>
+			
+		</aside>
+		<div id="online" style="float:right; width:18%; background-color:white;border:1px solid black;">
+			<span>Instant Games</span>
+			<a href="#" Style="float:right;text-decoration:none;"> More </a>
+			<a href="#" style="clear:both;float:left; padding:16px 0 9px 3px;color:black;"><i class="fa fa-arrow-left"></i></a>
+			<a href="#"><img class="games" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F4.bp.blogspot.com%2F-9dkkiEym_TU%2FUEmOWHGAveI%2FAAAAAAAAAP4%2FS-3yzSU4HsU%2Fs400%2Fludo.jpg&f=1&nofb=1" width="40px" height="40px" hspace="18px"; vspace="6px"></a>
+			<a href="#"><img class="games" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.YeReuGmLOFvsRLsR9TocowHaHa%26pid%3DApi&f=1" width="40px" height="40px" hspace="18px"; vspace="6px"></a>
+			<a href="#"><img class="games" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.qV6YchTv2WeQvdaXFTrnEwHaHa%26pid%3DApi&f=1" width="40px" height="40px" hspace="18px"; vspace="6px"></a>
+			<a href="#" style="float:left; padding:16px 0 9px 3px;color:black;" ><i class="fa fa-arrow-right"></i></a>
+			<hr style="clear:both;">
+			
+			<span style="float:left;">Games Your Friends Play</span>
+			<a href="#" Style="float:right;text-decoration:none;"> More </a>
+			<a href="#" style="clear:both;float:left; padding:16px 0 9px 3px;color:black;"><i class="fa fa-arrow-left"></i></a>
+			<a href="#"><img class="games" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fstatic.giantbomb.com%2Fuploads%2Fsquare_small%2F9%2F95666%2F1881614-pokemon_pikachu_kanto.png&f=1&nofb=1" width="40px" height="40px" hspace="18px"; vspace="6px"></a>
+			<a href="#"><img class="games" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.2OWfEK1NURf-ZthOYyRdAAHaHa%26pid%3DApi&f=1" width="40px" height="40px" hspace="18px"; vspace="6px"></a>
+			<a href="#"><img class="games" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.J16rDn7bMMCpYEMxn5PvZQHaHa%26pid%3DApi&f=1" width="40px" height="40px" hspace="18px"; vspace="6px"></a>
+			<a href="#" style="float:left; padding:16px 0 9px 3px;color:black;" ><i class="fa fa-arrow-right"></i></a>
+		</div>
+	   </div>
+	</body>
+	
+</html>
